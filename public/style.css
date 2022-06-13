@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #bfd8f8;
+}
+
+.main-container {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+.create-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  display: none;
+}
+
+.create-form {
+  background: #fff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 5px;
+  max-width: 360px;
+}
+
+.create-form > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.create-form header > i {
+  color: #3a59f4;
+  font-size: 25px;
+}
+
+.product-info > input,
+.product-info > textarea {
+  background: #c5d5f9;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  color: #3a59f4;
+}
+
+.product-info > textarea {
+  resize: none;
+  padding: 10px;
+  height: 100px;
+}
+
+.image-container {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  background: #c8e8fa;
+  color: #3a59f4;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+i {
+  color: #3a59f4;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.btn {
+  padding: 5px 10px;
+  background: #3a59f4;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  position: relative;
+  background: #9abbf9;
+  gap: 10px;
+  padding: 10px;
+}
+
+.details {
+  position: relative;
+  width: 350px;
+  min-height: 150px;
+  padding-bottom: 40px;
+}
+
+.product div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.message {
+  color: red;
+  float: right;
+}
+
+.success {
+  color: green;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-container > div {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.empty-list {
+  display: none;
+}
+
+.modal-container div > p {
+  margin-bottom: 10px;
+}
+
+.show-modal {
+  display: grid;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #3a59f4;
+}
+
+::-webkit-file-upload-button {
+  padding: 5px;
+  border: none;
+  margin: 5px 5px 10px 0;
+  background: #3a59f4;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .products-container {
+    width: 100%;
+  }
+  .product {
+    width: 340px;
+  }
+  .details {
+    width: 100%;
+  }
+  .product > img {
+    width: 100%;
+  }
+}
